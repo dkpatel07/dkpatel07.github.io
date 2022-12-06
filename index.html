@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/reset.css"> <!-- CSS Reset-->
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="scripts/app.js" defer></script>
+    <title>Deven Patel</title>
+</head>
+
+<body>
+    <div class="main-content">
+        <br>
+        <section class="intro">
+            <h1 class="main-name">Deven Patel</h1>
+            <p class="main-title">Web Developer<br></p>
+            <div class="link-buttons">
+                <a href="files/Deven Patel Resume (1) (3).docx" class="resume" download>
+                    <span class="material-symbols-outlined">
+                        file_download
+                    </span>Resume</a>
+                <a href="#contact" class="contact">Contact Me</a>  
+                
+            </div>
+        </section>
+        <br>
+        
+        
+        <section class="about">
+            <div class="left-about">
+                <h2 class="about-title">About Me and Academic Honesty</h2>
+                <p class="about-text">
+                   Currently studying at Seneca College in Computer Programming & Analysis and credentials is advanced diploma.
+                   I like to watch formula 1 racing as well as UFC fights.  
+                    <br><br>
+                    I declare that my assessment is wholly my own work in accordance with Seneca Academic Policy. No part of this assessment has been copied manually or electronically from any other source (including web sites) except for the information supplied by the WEB222 instructors and / or made available in this assessment for my use. I also declare that no part of this assignment has been distributed to other students.
+                </p>
+                <p class="about-text">
+                    <br><br><br><br>
+                    <span class="about-date"><span class="about-text-bold">Date:</span> 3rd December, 2022</span>
+                </p>
+            </div>
+            <div class="right-about">
+                <h2 class="about-title">Basic Information</h2>
+                <div class="about-info">
+                    <div class="basic-info-titles">
+                        <p class="about-text-bold">Age:</p><br>
+                        <p class="about-text-bold">Email:</p><br>
+                        <p class="about-text-bold">Languages:</p><br>
+                        <p class="about-text-bold">Class Section:</p><br>
+                        <p class="about-text-bold">Student ID:</p><br>
+                        <p class="about-text-bold">Instructor:</p><br>
+                    </div>
+                    <div class="basic-info-values">
+                        <p class="about-text"></p>21<br><br>
+                        <p class="about-text"></p>dkpatel58@myseneca.ca<br><br>
+                        <p class="about-text"></p>English, Gujarati, hindi<br><br>
+                        <p class="about-text">NDD</p><br>
+                        <p class="about-text">136298213</p><br>
+                        <p class="about-text"></p>Muath Alzghool<br>
+                    </div>
+                </div>
+        </section>
+        <br>
+        <section class="education">
+            <h2 class="education-title">Education</h2>
+
+            <div class="card">
+                <div class="left-card">
+                    <p class="card-period">2021 - 2024</p>
+                    <p class="card-degree">Advanced Diploma</p>
+                </div>
+                <div class="right-card">
+                    <p class="card-degree">Advanced Diploma</p>
+                    <p class="card-education-center">Seneca College</p>
+                    <p class="card-education-location">Toronto, ON</p>
+                    <p class="card-description">Computer Programming & Analysis</p>
+                </div>
+            </div>
+        </section>
+        <br>
+        <section id="contact">
+            <h2 class="contact-title">Contact Me</h2>
+            <form class="contact-form" action="https://httpbin.org/post" method="post">
+                <div class="row">
+                    <div class="input-field">
+                        <label for="name"><span class="required-field">*</span>Name</label>
+                        <input type="text" name="name" id="name" required>
+                    </div>
+                    <div class="input-field">
+                        <label for="email"><span class="required-field">*</span>Email</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field long">
+                        <label for="address"><span class="required-field">*</span>Street Address</label>
+                        <input type="text" name="address" id="address" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field">
+                        <label for="city"><span class="required-field">*</span>City</label>
+                        <input list="cities-choices" id="city" name="city">
+                        <datalist id="cities-choices">
+                            <option value="Toronto">
+                            <option value="Montreal">
+                            <option value="Vancouver">
+                            <option value="Calgary">
+                            <option value="Edmonton">
+                            <option value="Ottawa">
+                            <option value="Halifax">
+                            <option value="Quebec">
+                            <option value="Winnipeg">
+                            <option value="Victoria">
+                        </datalist>
+                    </div>
+                    <div class="input-field">
+                        <label for="postal"><span class="required-field">*</span>Postal Code</label>
+                        <input type="text" name="postal" id="postal" placeholder="A1A 1A1"
+                            pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="checkbox" name="within-canada" checked>
+                        <label for="checkbox">I am contacting from within Canada</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="radio-field">
+                        <div class="radio-option">
+                            <input type="radio" name="query" id="question" checked>
+                            <label for="question">Question</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" name="query" id="comment">
+                            <label for="comment">Comment</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" name="query" id="hiring">
+                            <label for="hiring">Hiring</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row hidden hourly">
+                    <div class="input-field">
+                        <label for="rate">Hourly Rate</label>
+                        <input type="number" name="rate" id="rate">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field long">
+                        <label for="message"><span class="required-field">*</span>Message</label>
+                        <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button type="reset">Clear</button>
+                    <button type="submit" value="submit">Submit</button>
+                </div>
+            </form>
+        </section>
+        <br>
+    </div>
+     
+    <br>
+    
+</body>
+
+</html>
